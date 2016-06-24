@@ -5,25 +5,25 @@
   
   <title>hexo博客搭建 | EL PSY CONGROO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="创建本地的blog文件
+  <meta name="description" content="1创建本地的blog文件
 nodeJS的安装与测试1.在官网下载最新的nodeJS文件，并安装。
 2.在终端窗口对安装号的nodeJS进行测试，在桌面位置输入node-v并回车，得到v4.4.5的版本号，说明安装成功。
-hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，则">
+hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客搭建">
 <meta property="og:url" content="http://yoursite.com/2016/06/22/build-hexoblog/index.html">
 <meta property="og:site_name" content="EL PSY CONGROO">
-<meta property="og:description" content="创建本地的blog文件
+<meta property="og:description" content="1创建本地的blog文件
 nodeJS的安装与测试1.在官网下载最新的nodeJS文件，并安装。
 2.在终端窗口对安装号的nodeJS进行测试，在桌面位置输入node-v并回车，得到v4.4.5的版本号，说明安装成功。
-hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，则">
-<meta property="og:updated_time" content="2016-06-22T14:48:14.000Z">
+hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，">
+<meta property="og:updated_time" content="2016-06-24T13:54:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客搭建">
-<meta name="twitter:description" content="创建本地的blog文件
+<meta name="twitter:description" content="1创建本地的blog文件
 nodeJS的安装与测试1.在官网下载最新的nodeJS文件，并安装。
 2.在终端窗口对安装号的nodeJS进行测试，在桌面位置输入node-v并回车，得到v4.4.5的版本号，说明安装成功。
-hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，则">
+hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，">
   
     <link rel="alternate" href="/atom.xml" title="EL PSY CONGROO" type="application/atom+xml">
   
@@ -98,20 +98,22 @@ hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><code>创建本地的blog文件</code></p>
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">创建本地的blog文件</span><br></pre></td></tr></table></figure>
 <h3 id="nodeJS的安装与测试"><a href="#nodeJS的安装与测试" class="headerlink" title="nodeJS的安装与测试"></a>nodeJS的安装与测试</h3><p>1.在官网下载最新的<a href="https://nodejs.org/en/" target="_blank" rel="external">nodeJS</a>文件，并安装。</p>
 <p>2.在终端窗口对安装号的nodeJS进行测试，在桌面位置输入node-v并回车，得到v4.4.5的版本号，说明安装成功。</p>
 <h3 id="hexo的安装与测试"><a href="#hexo的安装与测试" class="headerlink" title="hexo的安装与测试"></a>hexo的安装与测试</h3><p>1.在桌面位置先创建一个blog的文件夹，在终端窗口中进入blog文件夹，再输入npm install hexo -g然后回车来安装hexo，若出现error，则是因为权限不够，这时输入sudo npm install hero -g 回车，然后会出现输入密码的命令，输入本机密码后便能成功安装。<br>2.终端窗口输入hexo init 进行对hexo目录的初始化，可以输入hexo new 文件名 来创建新blog。输入hexo server 启动本地服务，可以得到一个本地blog地址，浏览器进入即可看到当前的blog。若要退出此状态，输入Ctrl+C退出。</p>
-<p><code>搭建github在线blog</code> </p>
+<pre><code class="bash">搭建github在线blog
+</code></pre>
 <h3 id="创建github账号并与本地连接"><a href="#创建github账号并与本地连接" class="headerlink" title="创建github账号并与本地连接"></a>创建github账号并与本地连接</h3><p>1.在github官网创建一个自己的账号，记住用户名及邮箱，并通过邮箱认证。<br>2.在终端窗口中输入git，回车可得当前的git命令及常用用法。接下来进行对ssh-key的配置，输入ssh-keygen，并连续三次回车。再输入vim ~/.ssh/id_rsa.pub，回车得到ssh-key，复制ssh-key，进入自己的github设置，在ssh粘贴ssh-key。<br>3.接着配置github与本地机器验证，输入git config –global user.name”用户名”，回车输入git config - -global user.email “验证邮箱地址”。<br>4.在github的new repository新建博客域名仓库，输入用户名.github.io。</p>
-<h3 id="blog的底层设置"><a href="#blog的底层设置" class="headerlink" title="blog的底层设置"></a>blog的底层设置</h3><p>打开blog文件夹的_config.yml文件，可以对blog的一些基本情况进行设置，比如<br>title: 新的征程<br>subtitle: 新的开始<br>description: 记录学习点滴<br>author: Sakura<br>language: zh-CN<br>最后设置最下面的deploy<br>type: git<br>repo: 域名仓库的https地址<br>其中域名仓库的https地址在自己的github博客的域名仓库中获得。</p>
+<h3 id="blog的底层设置"><a href="#blog的底层设置" class="headerlink" title="blog的底层设置"></a>blog的底层设置</h3><p>打开blog文件夹的_config.yml文件，可以对blog的一些基本情况进行设置，比如<br>title: 新的征程<br>subtitle: 新的开始<br>description: 记录学习点滴<br>author: Sakura<br>language: zh-CN</p>
+<p>最后设置最下面的deploy<br>type: git<br>repo: 域名仓库的https地址<br>其中域名仓库的https地址在自己的github博客的域名仓库中获得。</p>
 <h3 id="发布博客上传到线上"><a href="#发布博客上传到线上" class="headerlink" title="发布博客上传到线上"></a>发布博客上传到线上</h3><p>1.终端窗口中输入npm install hexo-deployer-git –save,回车对hexo进行git的安装和保存。<br>2.对编辑好的博客进行hexo server本地测试后，再输入hexo g，回车生成浏览器能识别的html和css文件，再输入 hexo d，回车将本地数据上传到自己的github博客中去。</p>
 <p>这样就可以完成自己的博客了。^_^</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="cipqzw39j00008xsenyxdz7da" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="ciptu2eur00002usexrq570ul" class="article-share-link">Share</a>
       
       
     </footer>
@@ -119,6 +121,15 @@ hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终�
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/06/24/响应式布局Meta/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          响应式布局 Meta标签
+        
+      </div>
+    </a>
   
   
     <a href="/2016/06/22/first-time/" id="article-nav-older" class="article-nav-link-wrap">
@@ -158,6 +169,10 @@ hexo的安装与测试1.在桌面位置先创建一个blog的文件夹，在终�
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/24/响应式布局Meta/">响应式布局 Meta标签</a>
+          </li>
         
           <li>
             <a href="/2016/06/22/build-hexoblog/">hexo博客搭建</a>
