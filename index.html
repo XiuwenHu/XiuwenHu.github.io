@@ -68,6 +68,146 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-css3选择器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/28/css3选择器/" class="article-date">
+  <time datetime="2016-06-28T13:58:00.000Z" itemprop="datePublished">2016-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/css3选择器/">css3选择器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这里说一下css3选择器的一些类型和作用，主要是说明一下除了一般常用的#ID，.class，标签选择器等选择器。</p>
+<p>###子元素选择器&amp;后代选择器</p>
+<p>用E和F代表父级和子级，则两者分别写为：</p>
+<p>E &gt; F 和 E F<br>子元素选择器 选中的是子元素F 子孙不会被选中</p>
+<p>后代选择器 是选择所有的F 包括子子孙孙</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="cipzj2qxw0000hzseagn60jwq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-htm5语义话标签" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/27/htm5语义话标签/" class="article-date">
+  <time datetime="2016-06-27T12:35:16.000Z" itemprop="datePublished">2016-06-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/27/htm5语义话标签/">html5语义话标签</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><br><br><span style="font-size:16px;color:#000">这里写一下html5一些常用和新的语义话标签。</span></p>
+<h3 id="短语句"><a href="#短语句" class="headerlink" title="短语句"></a>短语句</h3><h4 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h4><p>用作标记文本，将标记的文本显示高亮，常用于搜索高亮。</p>
+<p>例：&lt; mark &gt;标记文本&lt; /mark &gt;</p>
+<p><mark>标记文本</mark></p>
+<p><hr></p>
+<h4 id="meter"><a href="#meter" class="headerlink" title="meter"></a>meter</h4><p>定义度量衡：表示在一定范围内的值，如投票占比、使用量等。</p>
+<p>属性：</p>
+<p>value 实际度量的值，默认为0，可以为整数或者浮点数。</p>
+<p>high 范围的上限值</p>
+<p>low 范围的下限值</p>
+<p>max 最大值，默认值是1</p>
+<p>min 最小值，默认值是0</p>
+<p>optimum 最佳的值，必须在min属性值与max属性值之间</p>
+<p><hr></p>
+<h4 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h4><p>用于定义进度</p>
+<p>属性：</p>
+<p>value 实际进度的值，默认为0，可以为整数或者浮点数</p>
+<p>max 最大值，默认值是1</p>
+<p>min 最小值，默认值是0</p>
+<p><hr></p>
+<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p>定义时间和日期</p>
+<p>&lt; p &gt;We open at &lt; time &gt;10:00 every morning.&lt; /p &gt;</p>
+<p>&lt; p &gt;I have a date on &lt; time datetime=“2008-02-14” &gt;Valentines day&lt; /time &gt;.&lt; /p &gt;</p>
+<p>datetime=“YYYY-MM-DDThh:mm:ssTZD”</p>
+<p><hr></p>
+<h4 id="ruby"><a href="#ruby" class="headerlink" title="ruby"></a>ruby</h4><p>在东亚使用，显示的是东亚字符的发音。</p>
+<p>与 &lt; ruby &gt; 以及 &lt; rt &gt; 标签一同使用：</p>
+<p>ruby 元素由一个或多个字符（需要一个解释/发音）和一个提供该信息的 rt 元素组成，还包括可选的 rp 元素，定义当浏览器不支持 “ruby” 元素时显示的内容。</p>
+<p>&lt; ruby &gt;</p>
+<p>  漢 &lt; rp &gt;(&lt; /rp &gt;&lt; rt &gt;Kan&lt; /rt &gt;&lt; rp &gt;)&lt; /rp &gt;<br>  字 &lt; rp &gt;(&lt; /rp &gt;&lt; rt &gt;ji&lt; /rt &gt;&lt; rp &gt;)&lt; /rp &gt;</p>
+<p>&lt; /ruby &gt;</p>
+<p><ruby><br>  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp><br>  字 <rp>(</rp><rt>ji</rt><rp>)</rp><br></ruby></p>
+<hr>
+
+<h4 id="wbr"><a href="#wbr" class="headerlink" title="wbr"></a>wbr</h4><p>定义换行(Word Break Opportunity)</p>
+<p>规定在文本中的何处适合添加换行符。</p>
+<p><hr></p>
+<h4 id="abbr"><a href="#abbr" class="headerlink" title="abbr"></a>abbr</h4><p>定义缩写</p>
+<p>通过对缩写进行标记，能够为浏览器、拼写检查和搜索引擎提供有用的信息。</p>
+<p>The &lt; abbr title=“World Health Organization” &gt;WHO&lt; /abbr &gt; was founded in 1948.</p>
+<p>The <abbr title="“World" health="" organization”="">WHO</abbr> was founded in 1948.</p>
+<p><hr></p>
+<h4 id="bdi"><a href="#bdi" class="headerlink" title="bdi"></a>bdi</h4><p>定义隔离</p>
+<p>允许设置一段文本，使其脱离其父元素的文本方向设置。</p>
+<p><hr></p>
+<h4 id="cite-blockquote-q"><a href="#cite-blockquote-q" class="headerlink" title="cite,blockquote,q"></a>cite,blockquote,q</h4><p>cite,blockquote,q都是引入的功能</p>
+<p>cite标签定义作品（比如书籍、歌曲、电影、电视节目、绘画、雕塑等等）的标题。默认字体斜体。</p>
+<p>blockquote标签之间的文本都会从常规文本中分离出来，经常会在左、右两边进行缩进，而且有时会使用斜体。</p>
+<p>q标签定义一个短的引用。浏览器经常会在这种引用的周围插入引号。</p>
+<p><hr></p>
+<h4 id="output"><a href="#output" class="headerlink" title="output"></a>output</h4><p>&lt; output &gt; 标签定义不同类型的输出，比如脚本的输出。</p>
+<p><hr></p>
+<h4 id="code"><a href="#code" class="headerlink" title="code"></a>code</h4><p>格式化代码</p>
+<p>&lt; code &gt;标签表示元素内包含的文本是使用某种程序语言编写的源代码。通常以等宽字体显示。</p>
+<p><hr></p>
+<h4 id="pre"><a href="#pre" class="headerlink" title="pre"></a>pre</h4><p>定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</p>
+<p><hr></p>
+<h4 id="object"><a href="#object" class="headerlink" title="object"></a>object</h4><p>定义一个嵌入的对象。可以使用此元素向 XHTML 页面添加多媒体。此元素运行规定插入 HTML 文档中的对象的数据和参数，以及可用来显示和操作数据的代码。</p>
+<p><hr></p>
+<h4 id="param"><a href="#param" class="headerlink" title="param"></a>param</h4><p>param 元素可以为插入 XHTML 文档的对象规定 run-time 设置，也就是说，此标签可为包含它的 <object> 标签提供参数。</object></p>
+<hr>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/27/htm5语义话标签/" data-id="cipzj2qya0004hzse4xqam15b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-响应式布局Meta" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/24/响应式布局Meta/" class="article-date">
@@ -115,7 +255,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/响应式布局Meta/" data-id="ciptu9jr200034wseyh3sgid1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/响应式布局Meta/" data-id="cipzj2qyb0005hzse43hrzeae" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +302,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="ciptu9jqm00004wse6isvhok0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="cipzj2qy50002hzsemit0wi0o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -206,7 +346,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/first-time/" data-id="ciptu9jqt00014wser9zcakgq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/first-time/" data-id="cipzj2qy20001hzseuh8fjdx6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -251,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciptu9jr000024wse5x8xnmhj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipzj2qy80003hzseep59iy2z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -291,6 +431,14 @@
       <ul>
         
           <li>
+            <a href="/2016/06/28/css3选择器/">css3选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/27/htm5语义话标签/">html5语义话标签</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/24/响应式布局Meta/">响应式布局 Meta标签</a>
           </li>
         
@@ -300,10 +448,6 @@
         
           <li>
             <a href="/2016/06/22/first-time/">my first</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/22/hello-world/">Hello World</a>
           </li>
         
       </ul>
