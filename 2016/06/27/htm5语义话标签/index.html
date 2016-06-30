@@ -35,7 +35,7 @@ value 实际度量的值，默认为0，可以为整数或者浮点数。
 high 范围的上限值
 low 范围的下限值
 max 最">
-<meta property="og:updated_time" content="2016-06-29T14:15:38.000Z">
+<meta property="og:updated_time" content="2016-06-30T14:20:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html5语义话标签">
 <meta name="twitter:description" content="这里写一下html5一些常用和新的语义话标签。
@@ -131,7 +131,7 @@ max 最">
 <h4 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h4><p>用作标记文本，将标记的文本显示高亮，常用于搜索高亮。</p>
 <p>例：&lt; mark &gt;标记文本&lt; /mark &gt;</p>
 <p><mark>标记文本</mark></p>
-<p><hr style="border:solid"></p>
+<p><hr></p>
 <h4 id="meter"><a href="#meter" class="headerlink" title="meter"></a>meter</h4><p>定义度量衡：表示在一定范围内的值，如投票占比、使用量等。</p>
 <p>属性：</p>
 <p>value 实际度量的值，默认为0，可以为整数或者浮点数。</p>
@@ -211,12 +211,66 @@ max 最">
 <p><hr></p>
 <h4 id="figure"><a href="#figure" class="headerlink" title="figure"></a>figure</h4><p>figure标签规定独立的流内容（图像、图表、照片、代码等等），一般用作文档中插图的图像。</p>
 <p>figure元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响。</p>
+<p><hr></p>
+<h4 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h4><p> 标签定义菜单列表。当希望列出表单控件时使用该标签。<br> <hr></p>
+<h4 id="main"><a href="#main" class="headerlink" title="main"></a>main</h4><p>main标签规定文档的主要内容。</p>
+<p><main> 元素中的内容对于文档来说应当是唯一的。它不应包含在文档中重复出现的内容，比如侧栏、导航栏、版权信息、站点标志或搜索表单。</main></p>
+<p>注意：在一个文档中，不能出现一个以上的 main 元素。main 元素不能是以下元素的后代：article、aside、footer、header 或 nav。</p>
+<p><hr></p>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>用于客户端图像映射。图像映射指带有可点击区域的一幅图像。有usemap属性和area标签。</p>
+<p><hr></p>
+<h4 id="address"><a href="#address" class="headerlink" title="address"></a>address</h4><p>定义文档作者/所有者的联系信息。</p>
+<p>如果 address元素位于 body 元素内部，则它表示该文档作者/所有者的联系信息。</p>
+<p>如果address 元素位于 article 元素内部，则它表示该文章作者/所有者的联系信息。</p>
+<p>不应该使用 address 标签来描述邮政地址，除非这些信息是联系信息的组成部分。</p>
+<p>address 元素通常被包含在footer元素的其他信息中。</p>
+<p><hr><br><br><br><br></p>
+<h3 style="color:blue">表单元素 </h3>  
+
+<p><br></p>
+<h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><p>input标签用于搜集用户信息。</p>
+<p>根据不同的 type 属性值，输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等等，例：</p>
+<p><span style="font-weight:bold;color:#000;">tel：</span><br>用于输入电话号码。</p>
+<p><span style="font-weight:bold;color:#000;">search：</span><br>用于提示用户输入要搜索的文字。search 和 text 之间的区别主要在于样式上.</p>
+<p><span style="font-weight:bold;color:#000;">url：</span><br>用于输入单个网址。</p>
+<p><span style="font-weight:bold;color:#000;">email：</span><br>用于输入单个电子邮件地址。如果指定了 multiple 属性，就可以输入多个电子邮件地址，以逗号分隔。</p>
+<p><span style="font-weight:bold;color:#000;">datetime：</span><br>用于输入时区设置为 UTC 的日期和时间。</p>
+<p><span style="font-weight:bold;color:#000;">datetime-local：</span><br>用于输入不含时区的日期和时间。</p>
+<p><span style="font-weight:bold;color:#000;">date：</span><br>用于输入不含时区的日期。</p>
+<p><span style="font-weight:bold;color:#000;">month：</span><br>用于输入含年份和月份但不含时区的日期。</p>
+<p><span style="font-weight:bold;color:#000;">week：</span><br>用于输入含年份和周数但不含时区的日期。例如，此格式的日期 2011-W05 表示 2011 年的第 5 周。</p>
+<p><span style="font-weight:bold;color:#000;">time：</span><br>用于输入含小时、分钟、秒和秒的小数部分但不含时区的时间值。</p>
+<p><span style="font-weight:bold;color:#000;">number：</span><br>用户输入数字。</p>
+<p><span style="font-weight:bold;color:#000;">range：</span><br>用于输入数字，但与 number 的区别在于无需输入具体数字。在大部分支持该类型的浏览器中，范围控件的实施形式为滑块。</p>
+<p><span style="font-weight:bold;color:#000;">color：</span><br>用于通过颜色池控件选择颜色。</p>
+<p><hr></p>
+<h4 id="label"><a href="#label" class="headerlink" title="label"></a>label</h4><p>label 标签为 input 元素定义标注（标记）。</p>
+<p>label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。</p>
+<p>label 标签的 for 属性应当与相关元素的 id 属性相同,for 属性可把 label 绑定到另外一个元素。</p>
+<p><hr></p>
+<h4 id="datalist"><a href="#datalist" class="headerlink" title="datalist"></a>datalist</h4><p><datalist> 标签定义选项列表。与 input 元素配合使用该元素，来定义 input 可能的值。</datalist></p>
+<p>datalist 及其选项不会被显示出来，它仅仅是合法的输入值列表。</p>
+<p>使用 input 元素的 list 属性来绑定 dataliste 的id名。</p>
+<p><hr></p>
+<h4 id="keygen"><a href="#keygen" class="headerlink" title="keygen"></a>keygen</h4><p>用于表单的密钥对生成器字段。</p>
+<p>当提交表单时，私钥存储在本地，公钥发送到服务器。</p>
+<h4 id="ins"><a href="#ins" class="headerlink" title="ins"></a>ins</h4><p>定义已经被插入文档中的文本。</p>
+<p>与 del 一同使用，来描述文档中的更新和修正。</p>
+<p><hr></p>
+<h4 id="samp"><a href="#samp" class="headerlink" title="samp"></a>samp</h4><p>定义计算机程序的样本文本。</p>
+<p>并不经常使用。只有在要从正常的上下文中将某些短字符序列提取出来，对它们加以强调的极少情况下，才使用这个标签。</p>
+<h4 id="fieldset"><a href="#fieldset" class="headerlink" title="fieldset"></a>fieldset</h4><p>将表单内容的一部分打包，生成一组相关表单的字段。</p>
+<p>当一组表单元素放到 fieldset 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。</p>
+<p>legend 为 fieldset 元素定义标题。</p>
 <hr>
+
+<p><br></p>
+<h3 style="color:blue">表单属性 </h3>  
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/htm5语义话标签/" data-id="ciq0ytlv20002k5seutgdtsxq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/htm5语义话标签/" data-id="ciq2eo56100021iserkdx11vd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -274,6 +328,10 @@ max 最">
       <ul>
         
           <li>
+            <a href="/2016/06/30/CSS3动画效果设计/">CSS3动画效果设计</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/28/css3选择器/">css3选择器</a>
           </li>
         
@@ -287,10 +345,6 @@ max 最">
         
           <li>
             <a href="/2016/06/22/build-hexoblog/">hexo博客搭建</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/22/first-time/">my first</a>
           </li>
         
       </ul>
