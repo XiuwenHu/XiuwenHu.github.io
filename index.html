@@ -68,6 +68,43 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JS细节整理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/09/JS细节整理/" class="article-date">
+  <time datetime="2016-08-09T13:18:35.000Z" itemprop="datePublished">2016-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/09/JS细节整理/">JS细节整理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JS</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/09/JS细节整理/" data-id="cirnhxiv40000aiseke97ty8d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-用JS实现的一些小游戏" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/16/用JS实现的一些小游戏/" class="article-date">
@@ -91,7 +128,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>&lt;!DOCTYPE html&gt;</p>
-<html><br>    <head><br>        <meta charset="UTF-8"><br>        <meta name="viewport" content="width=device-width, initial-scale=1"><br>        <title>游戏</title><br>        <style type="text/css"><br>            body{<br>                margin: 0;<br>            }<br>            span{<br>                font-size: 30px;<br>                position: relative;<br>                left: 20px;<br>            }<br>            input{<br>                /<em>width: 50px;</em>/<br>                height: 50px;<br>                width: 50px;<br>                background-color: azure;<br>            }<br>            img{<br>                display: none;<br>                width: 400px;}<br>        </style><br>    </head><br>    <body><br>        目标：<span id="time"><br>            0<br>        </span><br>        <br><br>        <br><br>        计数：<span id="time-run">0</span><br>        <br><br>        <br><br>        <input type="button" name="btn" id="btn1" value="开始"><br>        <input type="button" name="" id="btn2" value="停"><br>        <input type="button" name="btn3" id="btn3" value="重置"><br>        <br><br>        <br><br>        <img><br><br>        <script><br>            var t=document.querySelector(“#time”);<br>            var btn1=document.querySelector(“#btn1”);<br>            var btn2=document.querySelector(“#btn2”);<br>            var btn3=document.querySelector(“#btn3”);<br>            var tr=document.querySelector(“#time-run”);<br>            var img=document.querySelector(“img”);<br>            function re(){<br>                tr.innerHTML=0;<br>                t.innerHTML=0;<br>                clearInterval(timer);<br>                i=0;<br>                r=0;<br>                img.style.display=”none”;<br>            }<br>            function rand(num1,num2){<br>                return parseInt(Math.random()*(num2-num1+1)+num1);<br>            }<br>            var timer<br>            var i=0;<br>            var r=0;<br>            var n=0;<br>            btn1.onclick=function(){<br>                re();<br>                r=rand(20,40);<br>                t.innerHTML=r;<br>                timer=setInterval(function(){<br>                    i++;<br>                    tr.innerHTML=i;<br>                    },250);<br>                setTimeout(function(){<br>                    if(parseInt(tr.innerHTML)&gt;50){<br>                    alert(“boom”);<br>                    re();<br>                    }<br>                },10000);<br>                btn2.onclick=function(){console.log(i);<br>                    clearInterval(timer);<br>                    if(parseInt(tr.innerHTML)==parseInt(t.innerHTML)){<br>                        n++;<br>                        if(n==4){<br>                            n=1;<br>                        }<br>                        img.style.display=”block”;<br>                        if(n==1){img.src=”<a href="http://img3.duitang.com/uploads/item/201306/24/20130624133245_XFP3f.thumb.700_0.jpeg&quot;;}">http://img3.duitang.com/uploads/item/201306/24/20130624133245_XFP3f.thumb.700_0.jpeg&quot;;}</a><br>                        else{if(n==2){<br>                            img.src=”<a href="http://www.ld12.com/upimg358/20160201/zrwkgapjti32042.jpg">http://www.ld12.com/upimg358/20160201/zrwkgapjti32042.jpg</a>“;<br>                            }<br>                        else{img.src=”<a href="http://img3.duitang.com/uploads/item/201404/13/20140413141646_fUyr3.thumb.700_0.jpeg&quot;;}">http://img3.duitang.com/uploads/item/201404/13/20140413141646_fUyr3.thumb.700_0.jpeg&quot;;}</a><br>                        }<br>                    }<br>                    else{<br>                        alert(“boom”);<br>                    }<br>                }<br>            }<br>            btn3.onclick=re;<br>        </script><br>    </body><br></html>
+<html><br>    <head><br>        <meta charset="UTF-8"><br>        <meta name="viewport" content="width=device-width, initial-scale=1"><br>        <title>游戏</title><br>        <style type="text/css"><br>            body{<br>                margin: 0;<br>            }<br>            span{<br>                font-size: 30px;<br>                position: relative;<br>                left: 20px;<br>            }<br>            input{<br>                /<em>width: 50px;</em>/<br>                height: 50px;<br>                width: 50px;<br>                background-color: azure;<br>            }<br>            img{<br>                display: none;<br>                width: 400px;}<br>        </style><br>    </head><br>    <body><br>        目标：<span id="time"><br>            0<br>        </span><br>        <br><br>        <br><br>        计数：<span id="time-run">0</span><br>        <br><br>        <br><br>        <input type="button" name="btn" id="btn1" value="开始"><br>        <input type="button" name="" id="btn2" value="停"><br>        <input type="button" name="btn3" id="btn3" value="重置"><br>        <br><br>        <br><br>        <img><br>    </body><br>    <script><br>            var t=document.querySelector(“#time”);<br>            var btn1=document.querySelector(“#btn1”);<br>            var btn2=document.querySelector(“#btn2”);<br>            var btn3=document.querySelector(“#btn3”);<br>            var tr=document.querySelector(“#time-run”);<br>            var img=document.querySelector(“img”);<br>            function re(){<br>                tr.innerHTML=0;<br>                t.innerHTML=0;<br>                clearInterval(timer);<br>                i=0;<br>                r=0;<br>                img.style.display=”none”;<br>            }<br>            function rand(num1,num2){<br>                return parseInt(Math.random()*(num2-num1+1)+num1);<br>            }<br>            var timer<br>            var i=0;<br>            var r=0;<br>            var n=0;<br>            btn1.onclick=function(){<br>                re();<br>                r=rand(20,40);<br>                t.innerHTML=r;<br>                timer=setInterval(function(){<br>                    i++;<br>                    tr.innerHTML=i;<br>                    },250);<br>                setTimeout(function(){<br>                    if(parseInt(tr.innerHTML)&gt;50){<br>                    alert(“boom”);<br>                    re();<br>                    }<br>                },10000);<br>                btn2.onclick=function(){console.log(i);<br>                    clearInterval(timer);<br>                    if(parseInt(tr.innerHTML)==parseInt(t.innerHTML)){<br>                        n++;<br>                        if(n==4){<br>                            n=1;<br>                        }<br>                        img.style.display=”block”;<br>                        if(n==1){img.src=”<a href="http://img3.duitang.com/uploads/item/201306/24/20130624133245_XFP3f.thumb.700_0.jpeg&quot;;}">http://img3.duitang.com/uploads/item/201306/24/20130624133245_XFP3f.thumb.700_0.jpeg&quot;;}</a><br>                        else{if(n==2){<br>                            img.src=”<a href="http://www.ld12.com/upimg358/20160201/zrwkgapjti32042.jpg">http://www.ld12.com/upimg358/20160201/zrwkgapjti32042.jpg</a>“;<br>                            }<br>                        else{img.src=”<a href="http://img3.duitang.com/uploads/item/201404/13/20140413141646_fUyr3.thumb.700_0.jpeg&quot;;}">http://img3.duitang.com/uploads/item/201404/13/20140413141646_fUyr3.thumb.700_0.jpeg&quot;;}</a><br>                        }<br>                    }<br>                    else{<br>                        alert(“boom”);<br>                    }<br>                }<br>            }<br>            btn3.onclick=re;<br>        </script><br></html>
 
 
 
@@ -105,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/16/用JS实现的一些小游戏/" data-id="ciqp42ek60007aosemjflmaw3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/16/用JS实现的一些小游戏/" data-id="cirnhxivk0006aiservr54dn2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/12/JaveScript基本用法/" data-id="ciqp42eji0000aosederv501u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/12/JaveScript基本用法/" data-id="cirnhxiv90001aiseaxm24xof" class="article-share-link">Share</a>
       
       
     </footer>
@@ -215,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/02/音视频/" data-id="ciqp42ek90008aosevp4dgmzm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/02/音视频/" data-id="cirnhxivo0007aise5ujdx1sn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -255,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/30/CSS3动画效果设计/" data-id="ciqp42elg0009aose89rcjqk2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/30/CSS3动画效果设计/" data-id="cirnhxivq0008aiseeaa8x28s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -347,7 +384,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciqp42ejr0002aose6aoqojyu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="cirnhxiw30009aiseseiaecwh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -539,7 +576,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/htm5语义话标签/" data-id="ciqp42ejz0005aosed9vsfvho" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/htm5语义话标签/" data-id="cirnhxivi0005aisex3ke7x26" class="article-share-link">Share</a>
       
       
     </footer>
@@ -596,7 +633,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/响应式布局Meta/" data-id="ciqp42ek10006aoseoeef8056" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/响应式布局Meta/" data-id="cirnhxiw5000aaise74v7l9z0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -643,7 +680,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="ciqp42ejo0001aoseraoq3mox" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/build-hexoblog/" data-id="cirnhxivc0002aiseq44z1tsk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -687,52 +724,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/first-time/" data-id="ciqp42eju0003aoseqcgg0vse" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/22/hello-world/" class="article-date">
-  <time datetime="2016-06-22T03:03:57.000Z" itemprop="datePublished">2016-06-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciqp42ejw0004aoseb99xyhwe" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/first-time/" data-id="cirnhxive0003aiseidhfd8v3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -743,6 +735,10 @@
 
   
 
+
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -759,7 +755,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
     </div>
   </div>
 
@@ -770,6 +766,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/08/09/JS细节整理/">JS细节整理</a>
+          </li>
         
           <li>
             <a href="/2016/07/16/用JS实现的一些小游戏/">用JS实现的一些小游戏</a>
@@ -785,10 +785,6 @@
         
           <li>
             <a href="/2016/06/30/CSS3动画效果设计/">CSS3动画效果设计</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/28/css3选择器/">css3选择器</a>
           </li>
         
       </ul>
